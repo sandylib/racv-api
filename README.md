@@ -5,6 +5,8 @@
 - you could use either postman or that test.REST file to test the endpoints (vscode and REST plug that is required installed)
 - GET endpoint that didn't do schema validation so if you didn't pass the required parameters (street, state, postcode), return 500 with property not found
 - POST do shema valiation and only suburb and description is optional, if payload not correct will error message back with status 500
+- The code following DRY(don't repeat yourself) principle, and are fullly testable
+- But even with testable code this server is not following TDD, unit tests are demo skills capability
 
 
 examples: (also could find in test.REST)
