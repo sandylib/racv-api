@@ -7,7 +7,7 @@
 - POST do shema valiation and only suburb and description is optional, if payload not correct will error message back with status 500
 
 
-examples: (as could find in test.REST)
+examples: (also could find in test.REST)
 - GET http://localhost:8080/api/v1/property/address?street=644 Mill Lane&suburb=Noxen&state=Virgin Islands&postcode=1019
 - POST only suburb and description is optional, if didn't pass there is schma validation, so it will error message back with status 500
 
