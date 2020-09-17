@@ -4,6 +4,7 @@
 - even the test that only requires one router that I still structure it like a real production server, that make this project is extendable and maintainable
 - you could use either postman or that test.REST file to test the endpoints (vscode and REST plug that is required installed)
 - GET endpoint that didn't do schema validation so if you didn't pass the required parameters (street, state, postcode), return 500 with property not found
+- I don't have arrange of data to calculate the price is below, avarage or above the properties price in the suburb, there is math.ramdon function will ramdon pick up from array of ['below', 'avarage', 'above'] to show inside the value of estimated flag
 - POST do shema valiation and only suburb and description is optional, if payload not correct will error message back with status 500
 - The code following DRY(don't repeat yourself) principle, and are fullly testable
 - But even with testable code this server is not following TDD, unit tests are demo skills capability

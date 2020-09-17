@@ -5,11 +5,11 @@ import { catchAsync } from '../middleware';
 import { validate } from '../validation'
 import addressSchema from '../models/addressSchema'
 import  data from './data'
-import { async } from "regenerator-runtime";
 const router = Router();
 
 
 const randomIntFromInterval = () => Math.floor(Math.random() * (2 - 1 + 1) + 1);
+
 const levels = ['below', 'avarage', 'above'];
 
 router.get('/property/address', catchAsync(async (req, res) => {
@@ -33,7 +33,7 @@ router.get('/property/address', catchAsync(async (req, res) => {
  
   return res
         .status(200)
-        .json({ price: result.price, address: result.address,  estimated: `this property currently is ${levels[randomIntFromInterval()]} the avarage price of this ${result.city || result.state}`});
+        .json({ price: result.price, address: result.address,  estimated: `this property currently is ${levels[randomIntFromInterval()]} the avarage price of this area`});
  })
 
 )
