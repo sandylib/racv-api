@@ -4,6 +4,7 @@
 - even the test that only requires one router that I still structure it like a real production server, that make this project is extendable and maintainable
 - you could use either postman or that test.REST file to test the endpoints (vscode and REST plug that is required installed)
 - GET endpoint that didn't do schema validation so if you didn't pass the required parameters (street, state, postcode), return 500 with property not found
+- POST do shema valiation and only suburb and description is optional, if payload not correct will error message back with status 500
 
 
 examples: (as could find in test.REST)
