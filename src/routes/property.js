@@ -43,7 +43,14 @@ router.post('/property/address', catchAsync(async (req,res) => {
    await validate(addressSchema, req.body);
 
   const newEntry = {
-    ...req.body,
+    price: req.body.price,
+    description: req.description || '',
+    address:{
+      street: req.body.address.street,
+      city: req.body.address.suburb,
+      state: req.body.address.state,
+      postcode: req.body.address.postcode
+    },
     idex: data.length,
     guid: uuidv4(),
     _id: objectid()
