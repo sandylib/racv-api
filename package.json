@@ -16,9 +16,9 @@
   "esm": {
     "mode": "auto"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["node", "express", "api", "racv"],
+  "author": "Sandy Zhang",
+  "license": "MIT",
   "jest": {
     "testEnvironment": "node",
     "coveragePathIgnorePatterns": [
