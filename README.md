@@ -7,7 +7,7 @@
 - POST do shema valiation and only suburb and description is optional, if payload not correct will error message back with status 500
 - The code following DRY(don't repeat yourself) principle, and are fullly testable
 - But even with testable code this server is not following TDD, unit tests are demo skills capability
-- Don't contain database as docment requirement, it is using memeory data, please to data.js (will load into memeory) file find the sample data for your query.
+- Not database contained (test's docment requirement), this server is using memeory data, please go to data.js (will load into memeory) file find the sample data for your query.
 
 
 examples: (also could find in test.REST)
